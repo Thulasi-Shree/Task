@@ -5,7 +5,8 @@ import Otp from "./Components/user/otp";
 import Reset from "./Components/reset";
 import Fail from "./Components/user/fail";
 import Register from "./Components/user/Register";
-import RegisterSuccess from "./Components/user/RegisterSuccess";
+import RegisterSuccess from "./Components/user/Login";
+import Home from "./Components/user/home";
 
 
 
@@ -21,7 +22,9 @@ function App() {
         <Route path="/otp" element={<Otp />} />  
         <Route path="/reset" element={<Reset />} />   
         <Route path="/fail" element={<Fail />} />   
-        <Route path="/success" element={<RegisterSuccess />} /> 
+        <Route path="/login" element={<RegisterSuccess />} /> 
+        <Route path="/home" element={<Home />} /> 
+        {/* <Route path="/login" element={<Login />} />  */}
         
       </Routes>
       </BrowserRouter>
